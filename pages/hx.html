@@ -7,10 +7,16 @@
     <link rel="icon" href="/images/favicon.png">
     <link rel="stylesheet" href="/style.css">
     <style>
+        :root {
+        --desktop-iframe-width: 50em;
+        --desktop-iframe-height: 28.125em;
+        /* Aspect ratio of 16:9 would be 9/16 = 0.5625, so 50 * 0.5625 = 28.125 */
+        --mobile-iframe-width: 20em;
+        --mobile-iframe-height: 11.25em;
+        }
         .iframe-container {
-            width: 50em; /* Width relative to the text size */
-            height: 28.125em; /* Height relative to the text size */
-            /* Aspect ratio of 16:9 would be 9/16 = 0.5625, so 50 * 0.5625 = 28.125 */
+            width: var(--desktop-iframe-width);
+            height: var(--desktop-iframe-height);
             overflow: hidden;
         }
         .iframe-container iframe {
@@ -18,6 +24,12 @@
             height: 100%;
             border: 0;
         }
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            .iframe-container {
+                width: var(--mobile-iframe-width);
+                height: var(--mobile-iframe-height);
+            }
     </style>
 </head>
 

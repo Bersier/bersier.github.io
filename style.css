@@ -21,8 +21,8 @@ a {
  text-decoration: none;
 }
 .iframe-container {
-    height: min(50vh, 9/16 * 100vw);
-    width: min(100vw, 16/9 * 50vh);
+    height: min(50vh, 9/16 * 95vw);
+    width: min(95vw, 16/9 * 50vh);
     overflow: hidden;
 }
 .iframe-container iframe {

@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  font-size: 200%;
   margin: 20px;
   text-align: left;
 }
@@ -14,12 +15,10 @@ h3 {
 }
 .section {
   padding-bottom: 20px;
+  max-width: 40em;
 }
 a {
-    text-decoration: none;
-}
-.text-container {
-    max-width: 40em;
+ text-decoration: none;
 }
 .iframe-container {
     height: min(50vh, 9/16 * 100vw);

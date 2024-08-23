@@ -22,7 +22,7 @@ p {
 .section {
   margin-top: 0px;
   margin-bottom: 1.5em;
-  max-width: 40em;
+  max-width: 41em;
 }
 a {
  text-decoration: none;
@@ -36,6 +36,24 @@ a {
     width: 100%;
     height: 100%;
 }
-ul li {
+ul {
+    margin: 0;
+}
+
+li {
     margin-bottom: 0.5em;
+}
+
+.inline-container {
+    text-align: left; /* Center-aligns text */
+    margin-bottom: 1em;
+}
+
+.logo {
+    max-height: 50px;
+}
+.text {
+    display: inline-block;
+    vertical-align:35%; /* Aligns items vertically in the middle */
+    margin-right: 10px; /* Adjust spacing between logo and text */
 }

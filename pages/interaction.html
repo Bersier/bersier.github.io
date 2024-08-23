@@ -15,9 +15,54 @@
             <img src="../images/logo.jpg" alt="Bersier's logo" style="width:50px; vertical-align:middle" >Stephane Bersier's home page
         </p>
       </a>
-
-    <h1> Universal Interaction </h1>
     </header>
+    <div class="section">
+        <h1> Universal Interaction </h1>
+        <p>
+            Fides is designed from the ground up to be a universal interaction language.
+        </p>
+    </div>
+    <div class="section">
+        <h2> Relation with process calculi </h2>
+        <p>
+        Although Fides is not a calculus, it shares some key features with process calculi:
+        </p>
+        <ul>
+            <li>
+                Execution corresponds to code modification, according to the semantics.
+                This implies that any runtime state can be represented by code in a straightforward manner.
+                It also implies that code is ephemeral by default; it disappears after being executed.
+            </li>
+            <li>
+                Concurrency is achieved simply via <a href="https://en.wikipedia.org/wiki/Process_calculus#Parallel_composition"> parallel composition</a>.
+            </li>
+            <li>
+                Communication happens via channels and message passing.
+            </li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>
+            Principled unbounded metaprogramming
+        </h2>
+        <p>
+        Unbounded metaprogramming allows processes to write arbitrary Fides code programmatically at runtime, while ensuring that no illegal code can be written. The latter is achieved via a faithful representation of Fides within Fides as typeful values.
+        </p>
+    </div>
+    <div class="section">
+        <h2>
+            Universal trusted third party
+        </h2>
+        <p>
+        A designated channel allows communication with the Launcher, which provides certified code launch as a service. Given a piece of Fides code that defines a process behavior, the Launcher starts a process with the given behavior, and returns a signed launch certificate for the given code.
+        </p>
+        <p> This makes the Launcher a universal trusted third party, as well as a personification of Fides.</p>
+    </div>
+    <div class="section">
+        <h2> Code </h2>
+        <p> This  <a href="https://github.com/Bersier/fides">Github project</a>
+            is a work-in-progress implementation of Fides in Scala. </p>
+    </div>
 
 </body>
 </html>

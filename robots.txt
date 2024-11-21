@@ -1,1 +1,1 @@
-Sitemap: https://bersier.github.io/sitemap
+Sitemap: https://bersier.github.io/sitemap.xml
